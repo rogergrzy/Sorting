@@ -98,4 +98,4 @@ A análise revela que a escolha do algoritmo de ordenação ideal depende fortem
 
 3.  **Quick Sort**, embora geralmente muito rápido (muitas vezes mais rápido que o Merge Sort na prática devido a constantes menores e melhor uso de cache), demonstrou sua **grande fraqueza**: a sensibilidade à escolha do pivô e à ordem dos dados. Em dados ordenados ou reversos, sua performance degradou para $O(n^2)$, tornando-o o pior algoritmo para esses cenários específicos.
 
-Para o seu problema específico, com esses datasets, o Radix Sort é a melhor solução. Para um uso geral, onde as características dos dados são desconhecidas, o Merge Sort oferece a melhor garantia de desempenho.
+Com esses datasets, o Radix Sort é a melhor solução. Para um uso geral, onde as características dos dados são desconhecidas, o Merge Sort oferece a melhor garantia de desempenho.
