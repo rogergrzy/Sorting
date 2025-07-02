@@ -88,16 +88,6 @@ Foram executados testes com 3 datasets distintos para avaliar o desempenho de ca
 * **Pior:** **Quick Sort**. Este é o **pior cenário absoluto** para a nossa implementação do Quick Sort. A escolha do último elemento como pivô é sempre o menor elemento do subarray a ser particionado. Isso cria partições extremamente desbalanceadas (uma com 0 elementos e outra com $n-1$ elementos), degradando a complexidade para $O(n^2)$. O número de iterações se aproxima de $n$, e o número de trocas é massivo.
 * **Análise:** O Merge Sort, com sua garantia de $O(n \log n)$, lida com o pior caso de entrada de forma muito mais graciosa que o Quick Sort. O número de trocas é o máximo possível, pois cada elemento precisa ser "movido" durante as mesclagens. O Radix Sort simplesmente ignora a ordem e vence com folga.
 
-### Gráficos Comparativos
-
-Para gerar os gráficos, os resultados de cada rodada foram impressos no formato CSV. Estes dados podem ser importados para qualquer software de planilhas (Excel, Google Sheets) ou uma biblioteca de visualização (como Matplotlib em Python) para criar gráficos de barras comparando Tempo, Trocas e Iterações.
-
-**(Exemplo de como os gráficos se pareceriam)**
-
-* **Gráfico de Tempo:** mostraria as barras do Radix Sort consistentemente muito mais baixas que as outras. A barra do Quick Sort seria visivelmente maior no Dataset 3.
-* **Gráfico de Trocas:** mostraria o Quick Sort e o Merge Sort com barras altas nos datasets reversos, enquanto o Radix Sort teria um número de movimentações constante e relacionado a $d \cdot n$.
-* **Gráfico de Iterações:** mostraria o Merge Sort e o Radix Sort com um número de iterações pequeno e constante, enquanto o Quick Sort teria um aumento drástico de iterações nos datasets 2 e 3.
-
 ## Conclusão
 
 A análise revela que a escolha do algoritmo de ordenação ideal depende fortemente das características dos dados de entrada.
